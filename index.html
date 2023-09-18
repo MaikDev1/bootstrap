@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Layout de Página com Abas</title>
+  <style>
+    .window img {
+      width: 100%;
+      /* Set a fixed width of 100% to ensure uniform width */
+      height: 250px;
+      /* Set a fixed height for all images, adjust the value as needed */
+      object-fit: cover;
+      /* Maintain aspect ratio and crop if necessary */
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .window {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    /* Estilo personalizado para o botão .btn-primary */
+    .btn-two {
+      width: 100%;
+      background-color: #0c8573;
+      /* Cor de fundo padrão */
+      color: #fff;
+      /* Cor do texto padrão */
+      border: none;
+      font-weight: bolder;
+    }
+
+    /* Estilo para o botão .btn-primary no hover */
+    .btn-two:hover {
+      background-color: #8bdcae;
+      /* Nova cor de fundo no hover */
+      color: #0c8573;
+    }
+
+    .img-fluid {
+      border-radius: 5px;
+    }
+
+    .img-fluid2 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 20vw;
+      text-align: center;
+    }
+
+    .capa-header {
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+
+    .img-k {
+      width: 100%;
+      height: 250px;
+    }
+
+    .card-de-destaque,
+    .collapse {
+      background-color: #fff;
+      /* Cor de fundo do card */
+      border: 1px solid #ddd;
+      /* Borda do card */
+      border-radius: 10px;
+      /* Cantos arredondados */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      /* Sombra */
+    }
+
+    .collapse {
+      margin-top: 2vw;
+    }
+
+    .text-left {
+      padding: 10px;
+    }
+
+    .btn-primary2 {
+      background-color: #0c8573;
+      /* Cor de fundo padrão */
+      color: #fff;
+      /* Cor do texto padrão */
+      border: none;
+      font-weight: bolder;
+      width: 100%;
+    }
+
+    .btn-primary2:hover {
+      background-color: #8bdcae;
+      /* Nova cor de fundo no hover */
+      color: #0c8573;
+    }
+
+    .nav-link {
+      font-size: large;
+      font-weight: bolder;
+      color: white;
+    }
+
+    .nav-tabs {
+      background-color: #0c8573;
+    }
+  </style>
+
+</head>
+
+
+
+
+<body>
+
+  <!-- Abas -->
+  <header class="container-fluid capa-header">
+    <img src="/Imagem/capanova.png" alt="Imagem de Capa" class="img-fluid2">
+    <!-- Outro conteúdo, como um subtítulo, aqui -->
+  </header>
+
+
+
+  <div class="container mt-4">
+    <!-- Aba principal com três colunas -->
+    <ul class="nav nav-tabs justify-content-center" id="abaPrincipal" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="coluna1-tab" data-toggle="tab" href="#coluna1" role="tab" aria-controls="coluna1" aria-selected="true">Destaque 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="coluna2-tab" data-toggle="tab" href="#coluna2" role="tab" aria-controls="coluna2" aria-selected="false">Destaque 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="coluna3-tab" data-toggle="tab" href="#coluna3" role="tab" aria-controls="coluna3" aria-selected="false">Destaque 3</a>
+      </li>
+    </ul>
+
+    <!-- Conteúdo das colunas -->
+    <div class="tab-content" id="abaPrincipalContent">
+      <!-- Coluna 1 -->
+      <div class="tab-pane fade show active text-center" id="coluna1" role="tabpanel" aria-labelledby="coluna1-tab">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <div class="card-de-destaque">
+              <img class="img-k" src="/Imagem/azulejo.jpg" alt="">
+              <h3>Conteúdo da Coluna 1</h3>
+              <button class="btn btn-primary2" type="button" data-toggle="collapse" data-target="#coluna1Conteudo" aria-expanded="false" aria-controls="coluna1Conteudo">Ver Conteúdo Completo</button>
+            </div>
+            <div class="collapse" id="coluna1Conteudo">
+              <p class="text-left">«Mas devo explicar-lhe como nasceu toda essa idéia equivocada de denunciar um prazer e louvar a dor, e lhe darei um relato completo do sistema, expondo os ensinamentos reais do grande explorador da verdade, o mestre-construtor. da felicidade humana. Ninguém rejeita, não gosta, ou evita o prazer em si, porque é prazer, mas porque aqueles que não sabem como buscar prazer encontram racionalmente conseqüências que são extremamente dolorosas. Tampouco há alguém que ame, busque ou deseje obter dor de si mesmo, porque é dor, mas ocasionalmente ocorrem circunstâncias em que a labuta e a dor podem lhe proporcionar um grande prazer. Para dar um exemplo trivial, qual de nós empreende algum exercício físico laborioso, exceto para obter alguma vantagem disso? Mas quem tem o direito de criticar um homem que escolhe desfrutar de um prazer que não tem conseqüências irritantes, ou alguém que evita uma dor que não produz prazer resultante?
+                Por outro lado, denunciamos com justa indignação e antipatia homens que são tão enganados e desmoralizados pelos encantos do prazer do momento, tão cegados pelo desejo, que não podem prever a dor e os problemas que estão fadados a acontecer; e a culpa igual pertence àqueles que falham em seu dever através da fraqueza da vontade, o que é o mesmo que dizer através do encolhimento da labuta e da dor. Esses casos são perfeitamente simples e fáceis de distinguir. Em uma hora livre, quando nosso poder de escolha é desimpedido e quando nada impede que sejamos capazes de fazer o que mais gostamos, todo prazer é para ser bem-vindo e toda dor evitada. Mas, em certas circunstâncias, e devido às reivindicações de dever ou às obrigações dos negócios, freqüentemente ocorrerá que os prazeres devem ser repudiados e os aborrecimentos aceitos. O homem sábio, portanto, sempre se atém a esse princípio de seleção: rejeita os prazeres para assegurar outros prazeres maiores ou tolera dores para evitar dores piores.»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna 2 -->
+      <div class="tab-pane fade text-center" id="coluna2" role="tabpanel" aria-labelledby="coluna2-tab">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <div class="card-de-destaque">
+              <img class="img-k" src="/Imagem/reaproveitamento_de_agua.png" alt="">
+              <h3>Conteúdo da Coluna 2</h3>
+              <button class="btn btn-primary2" type="button" data-toggle="collapse" data-target="#coluna2Conteudo" aria-expanded="false" aria-controls="coluna2Conteudo">Ver Conteúdo Completo</button>
+            </div>
+            <div class="collapse" id="coluna2Conteudo">
+              <p>Este é o conteúdo completo da coluna 2.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna 3 -->
+      <div class="tab-pane fade text-center" id="coluna3" role="tabpanel" aria-labelledby="coluna3-tab">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <div class="card-de-destaque">
+              <img class="img-k" src="/Imagem/caminhao_descarte_lampadas.png" alt="">
+              <h3>Conteúdo da Coluna 3</h3>
+              <button class="btn btn-primary2" type="button" data-toggle="collapse" data-target="#coluna3Conteudo" aria-expanded="false" aria-controls="coluna3Conteudo">Ver Conteúdo Completo</button>
+            </div>
+            <div class="collapse" id="coluna3Conteudo">
+              <p>Este é o conteúdo completo da coluna 3.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Abas -->
+
+
+
+
+
+  <div class="container mt-4">
+    <!-- Conteúdo das abas -->
+    <div class="tab-content">
+      <!-- Aba 1 -->
+      <div class="tab-pane fade show active" id="aba1" role="tabpanel">
+        <!-- Fileira 1 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+
+            <div class="window">
+
+              <img src="/Imagem/bond1.jpg" class="img-fluid" alt="Imagem 1">
+              <h1>BONDE DE SANTA TERESA GANHA SEU SELO DE SUSTENTABILIDADE</h1>
+              <p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere</p>
+              <a href="#" class="btn btn-two saiba-mais" data-toggle="collapse" data-target="#saibaMaisContent">
+                Saiba mais
+              </a>
+              <div class="collapse mt-3" id="saibaMaisContent">
+                <p>
+                  Conhecimento de mundo
+                  Ao longo de sua vida, o leitor adquire conhecimentos utilizados durante a leitura dos textos. O leitor constrói o sentido do texto quando articula diferentes níveis de conhecimento, entre eles o conhecimento de mundo. Esse tipo de conhecimento costuma ser adquirido informalmente, através de nossas experiências pessoais e convívio em sociedade. Ativar seu conhecimento de mundo no momento certo pode ser útil tanto para salvar sua vida no meio da floresta ou para resolver questões do ENEM.
+
+                  Textos verbais e visuais
+                  Até aqui, vimos que os textos podem ser orais ou escritos. Mas essa noção precisa ser ampliada, pois há textos que não contam com o auxílio da palavra, seja ela escrita ou oral. É o caso, por exemplo, da fotografia e da pintura. Dizemos, então, que há textos verbais e visuais. Há ainda textos que utilizam os dois recursos, como os filmes, que usam imagens, diálogos e legendas.
+
+                  Então, chegamos a conceito de texto mais ampliado e consistente: todo enunciado que faz sentido para um determinado grupo em uma determinada situação. No ENEM, essa noção mais moderna de texto é a que vale.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bond2.jpg" class="img-fluid" alt="Imagem 2">
+              <h1>
+                VOCÊ SABIA: O BONDE DE SANTA TERESA É UM MEIO DE TRANSPORTE ECO FRIENDLY
+              </h1>
+              <p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere orci.</p>
+              </p>
+              <a href="#" class="btn btn-two saiba-mais" data-toggle="collapse" data-target="#saibaMaisContent1">
+                Saiba mais
+              </a>
+              <div class="collapse mt-3" id="saibaMaisContent1">
+                <p>
+                  Conhecimento de mundo
+                  Ao longo de sua vida, o leitor adquire conhecimentos utilizados durante a leitura dos textos. O leitor constrói o sentido do texto quando articula diferentes níveis de conhecimento, entre eles o conhecimento de mundo. Esse tipo de conhecimento costuma ser adquirido informalmente, através de nossas experiências pessoais e convívio em sociedade. Ativar seu conhecimento de mundo no momento certo pode ser útil tanto para salvar sua vida no meio da floresta ou para resolver questões do ENEM.
+
+                  Textos verbais e visuais
+                  Até aqui, vimos que os textos podem ser orais ou escritos. Mas essa noção precisa ser ampliada, pois há textos que não contam com o auxílio da palavra, seja ela escrita ou oral. É o caso, por exemplo, da fotografia e da pintura. Dizemos, então, que há textos verbais e visuais. Há ainda textos que utilizam os dois recursos, como os filmes, que usam imagens, diálogos e legendas.
+
+                  Então, chegamos a conceito de texto mais ampliado e consistente: todo enunciado que faz sentido para um determinado grupo em uma determinada situação. No ENEM, essa noção mais moderna de texto é a que vale.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 2 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bonde3.jpg" class="img-fluid" alt="Imagem 3">
+              <h1>VOCÊ SABIA: O BONDE DE SANTA TERESA É UM MEIO DE TRANSPORTE ECO FRIENDLY</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere orci.</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/planta.jpg" class="img-fluid" alt="Imagem 4">
+              <h1>VOCÊ SABIA: O BONDE DE SANTA TERESA É UM MEIO DE TRANSPORTE ECO FRIENDLY</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere orci.</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 3 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/presidencia.jpg" class="img-fluid" alt="Imagem 5">
+              <h1>CENTRAL LOGÍSTICA DESEJA IMPLANTAR AÇÕES COM FOCO NA PRESERVAÇÃO DO AMBIENTE </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere orci.</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bike.jpg" class="img-fluid" alt="Imagem 6">
+              <h1> PESQUISA REVELA:7 EM CADA 10 PESSOAS SE PREOCUPAM EM DIMINUIR A EMISSÃO DE CO2</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed justo non leo tristique fringilla. Quisque volutpat orci vel neque mollis, sit amet vehicula tellus consectetur. Etiam eget tortor malesuada, feugiat elit at, posuere orci.</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba 2 -->
+      <div class="tab-pane fade" id="aba2" role="tabpanel">
+        <h3>Aba 2</h3>
+        <!-- Fileira 1 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bike.jpg" class="img-fluid" alt="Imagem 7">
+              <p>Conteúdo da janela 7</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bond1.jpg" class="img-fluid" alt="Imagem 7">
+              <p>Conteúdo da janela 7</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 2 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bond2.jpg" class="img-fluid" alt="Imagem 9">
+              <p>Conteúdo da janela 9</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bonde3.jpg" class="img-fluid" alt="Imagem 10">
+              <p>Conteúdo da janela 10</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 3 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/planta.jpg" class="img-fluid" alt="Imagem 11">
+              <p>Conteúdo da janela 11</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/presidencia.jpg" class="img-fluid" alt="Imagem 12">
+              <p>Conteúdo da janela 12</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba 3 -->
+      <div class="tab-pane fade" id="aba3" role="tabpanel">
+        <h3>Aba 3</h3>
+        <!-- Fileira 1 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bike.jpg" class="img-fluid" alt="Imagem 13">
+              <p>Conteúdo da janela 13</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bonde3.jpg" class="img-fluid" alt="Imagem 14">
+              <p>Conteúdo da janela 14</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 2 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bond2.jpg" class="img-fluid" alt="Imagem 15">
+              <p>Conteúdo da janela 15</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/presidencia.jpg" class="img-fluid" alt="Imagem 16">
+              <p>Conteúdo da janela 16</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fileira 3 de janelas -->
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/planta.jpg" class="img-fluid" alt="Imagem 17">
+              <p>Conteúdo da janela 17</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="window">
+              <img src="/Imagem/bond1.jpg" class="img-fluid" alt="Imagem 18">
+              <p>Conteúdo da janela 18</p>
+              <a href="#" class="btn btn-two saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#aba1" role="tab">1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#aba2" role="tab">2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#aba3" role="tab">3</a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
