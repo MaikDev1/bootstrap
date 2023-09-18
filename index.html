@@ -24,6 +24,8 @@
     .window {
       border: 1px solid #ddd;
       border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       background-color: #fff;
@@ -43,7 +45,8 @@
     /* Estilo para o botão .btn-primary no hover */
     .btn-two:hover {
       background-color: #8bdcae;
-      /* Nova cor de fundo no hover */
+      transform: scale(0.9);
+      transition: all 0.2s;
       color: #0c8573;
     }
 
@@ -77,13 +80,10 @@
     .card-de-destaque,
     .collapse {
       background-color: #fff;
-      /* Cor de fundo do card */
       border: 1px solid #ddd;
-      /* Borda do card */
       border-radius: 10px;
-      /* Cantos arredondados */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      /* Sombra */
+      
     }
 
     .collapse {
@@ -96,9 +96,7 @@
 
     .btn-primary2 {
       background-color: #0c8573;
-      /* Cor de fundo padrão */
       color: #fff;
-      /* Cor do texto padrão */
       border: none;
       font-weight: bolder;
       width: 100%;
@@ -106,7 +104,8 @@
 
     .btn-primary2:hover {
       background-color: #8bdcae;
-      /* Nova cor de fundo no hover */
+      transform: scale(0.9);
+      transition: all 0.3s;
       color: #0c8573;
     }
 
@@ -119,6 +118,26 @@
     .nav-tabs {
       background-color: #0c8573;
     }
+
+    .nav-tabs{
+      width: 57%;
+    margin: auto;
+    background-color: #0c8573;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#nav-tabs2{
+  width: 100%;
+  margin: auto;
+  background-color: #0c8573;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+    
   </style>
 
 </head>
@@ -424,7 +443,7 @@
         </div>
       </div>
     </div>
-    <ul class="nav nav-tabs justify-content-center" role="tablist">
+    <ul class="nav nav-tabs justify-content-center" role="tablist" id="nav-tabs2">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#aba1" role="tab">1</a>
       </li>
