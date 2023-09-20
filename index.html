@@ -210,19 +210,29 @@
     /* Estilize os ícones */
     .icon-container3 {
       position: absolute;
-      top: 61%;
+      top: 58%;
       left: 55%;
     }
 
     .icone-px {
       width: 30%;
-      padding: 10px;
+      padding: 15px;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      /* Transição suave com curva de tempo personalizada */
     }
 
     .container-rede {
-      width: 83%;
-      margin-top: 150px;
+      width: 90%;
       margin: 0 auto;
+    }
+
+    #row3 {
+      margin-top: 100px;
+    }
+
+    .icone-px:hover {
+      transform: scale(1.2);
+      color: white;
     }
   </style>
 
@@ -589,7 +599,7 @@
 
   <!--Redes Socias-->
   <div class="container-rede">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="row3">
       <div class="col-md-7">
         <div class="image-container3">
           <img src="/Imagem/GIF.gif" alt="Sua Imagem" class="img-fluid">
