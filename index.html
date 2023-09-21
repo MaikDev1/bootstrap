@@ -234,6 +234,45 @@
       transform: scale(1.2);
       color: white;
     }
+
+    /*VIDEOS CARD*/
+
+    .video-card {
+      margin-bottom: 20px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .video-card .btn {
+      width: 90%;
+      margin: 0 auto;
+      background-color: #0c8573;
+      color: #fff;
+      border: none;
+      font-weight: bolder;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-card .btn:hover {
+      background-color: #8bdcae;
+      transform: scale(1.1);
+      transition: all 0.2s;
+      color: #0c8573;
+    }
+
+    #row4 {
+      margin-top: 100px;
+    }
+  </style>
   </style>
 
 </head>
@@ -614,7 +653,47 @@
     </div>
   </div>
   <!--Redes Socias-->
+  <!--Videos-->
 
+  <div class="container">
+    <div class="row" id="row4">
+      <!-- Primeiro vídeo -->
+      <div class="col-md-4">
+        <div class="video-card">
+          <img src="/Imagem/presidencia.jpg" class="img-fluid" alt="Imagem do Vídeo 1">
+          <div class="card-body">
+            <h5 class="card-title">Título do Vídeo 1</h5>
+            <p class="card-text">Descrição do Vídeo 1</p>
+            <a href="link_para_o_video_1_do_youtube" class="btn btn-primary btn-block" target="_blank">Assistir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segundo vídeo -->
+      <div class="col-md-4">
+        <div class="video-card">
+          <img src="/Imagem/bike.jpg" class="img-fluid" alt="Imagem do Vídeo 2">
+          <div class="card-body">
+            <h5 class="card-title">Título do Vídeo 2</h5>
+            <p class="card-text">Descrição do Vídeo 2</p>
+            <a href="link_para_o_video_2_do_youtube" class="btn btn-primary btn-block" target="_blank">Assistir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terceiro vídeo -->
+      <div class="col-md-4">
+        <div class="video-card">
+          <img src="/Imagem/planta.jpg" class="img-fluid" alt="Imagem do Vídeo 3">
+          <div class="card-body">
+            <h5 class="card-title">Título do Vídeo 3</h5>
+            <p class="card-text">Descrição do Vídeo 3</p>
+            <a href="link_para_o_video_3_do_youtube" class="btn btn-primary btn-block" target="_blank">Assistir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
